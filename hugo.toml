@@ -1,0 +1,41 @@
+baseURL = "https://derossimolina.github.io/"
+languageCode = "pt-BR"
+title = "derossimolina"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Molina"
+  description = "Notas, ensaios e pesquisa"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[params.homeInfoParams]
+  Title = "derossimolina"
+  Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/derossimolina"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,24 @@
+{{- $dest := .Destination -}}
+{{- $text := .Text | safeHTML -}}
+{{- $title := .Title -}}
+
+{{- if strings.HasSuffix $dest ".md" -}}
+  {{- $name := strings.TrimSuffix ".md" $dest -}}
+  {{- $page := "" -}}
+  {{- range $.Page.Site.RegularPages -}}
+    {{- $fileStem := path.Base .File.Path | strings.TrimSuffix ".md" -}}
+    {{- if eq $fileStem $name -}}
+      {{- $page = . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $page -}}
+    <a href="{{ $page.RelPermalink }}" class="internal-link">{{ $text }}</a>
+  {{- else -}}
+    <span class="broken-link" title="Nota não publicada: {{ $name }}">{{ $text }}</span>
+  {{- end -}}
+{{- else -}}
+  <a href="{{ $dest }}"
+    {{- with $title }} title="{{ . }}"{{ end -}}
+    {{- if strings.HasPrefix $dest "http" }} target="_blank" rel="noopener"{{ end -}}
+  >{{ $text }}</a>
+{{- end -}}
