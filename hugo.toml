@@ -4,61 +4,55 @@ title = "derossimolina"
 theme = "PaperMod"
 paginate = 10
 
-# Markdown rendering configuration
-[markup.goldmark.renderer]
-unsafe = true
-
-# Output formats
-[outputs]
-home = ["HTML", "RSS", "JSON"]
-
-# Menu configuration
-[menu]
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 10
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 20
-
-[[menu.main]]
-identifier = "archive"
-name = "Arquivo"
-url = "/archive/"
-weight = 30
-
-# Parameters imported from config/_default/params.toml
-# Theme and display customization
 [params]
-author = "Molina"
-description = "Notas e ensaios sobre ciência, política e sistemas complexos."
-defaultTheme = "auto"
-ShowReadingTime = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowToc = true
-ShowShareButtons = false
+  author = "Molina"
+  description = "Notas, ensaios e pesquisa"
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  mainSections = ["posts"]
 
-# Home page info
 [params.homeInfoParams]
-Title = "derossimolina"
-Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
-
-# Social icons
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/derossimolina"
+  Title = "derossimolina"
+  Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
 
 [[params.socialIcons]]
-name = "linkedin"
-url = "https://linkedin.com/in/derossimolina"
+  name = "github"
+  url = "https://github.com/derossimolina"
 
-# Enable CSS customization
-[params.customCSS]
-enabled = true
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "pesquisas"
+    name = "pesquisas"
+    url = "/pesquisas/"
+    weight = 20
+  [[menu.main]]
+    identifier = "publicacoes"
+    name = "publicações"
+    url = "/publicacoes/"
+    weight = 30
+  [[menu.main]]
+    identifier = "atividades"
+    name = "atividades"
+    url = "/atividades/"
+    weight = 40
+  [[menu.main]]
+    identifier = "sobre"
+    name = "sobre"
+    url = "/sobre/"
+    weight = 50
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
