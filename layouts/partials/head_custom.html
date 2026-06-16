@@ -1,0 +1,13 @@
+{{- /* Custom head content for Nous Research aesthetic */ -}}
+<link rel="stylesheet" href="{{ (resources.Get "css/extended/custom.css") | absURL }}" />
+
+{{- /* Font optimization for better typography */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{- /* Meta tags for better SEO and appearance */ -}}
+<meta property="og:locale" content="{{ or (index site.Data.i18n site.Language.Lang).locale site.LanguageCode }}" />
+
+{{- /* Favicon and theme customization */ -}}
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)" />
