@@ -4,38 +4,61 @@ title = "derossimolina"
 theme = "PaperMod"
 paginate = 10
 
-[params]
-  author = "Molina"
-  description = "Notas, ensaios e pesquisa"
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
+# Markdown rendering configuration
+[markup.goldmark.renderer]
+unsafe = true
 
+# Output formats
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# Menu configuration
+[menu]
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "archive"
+name = "Arquivo"
+url = "/archive/"
+weight = 30
+
+# Parameters imported from config/_default/params.toml
+# Theme and display customization
+[params]
+author = "Molina"
+description = "Notas e ensaios sobre ciência, política e sistemas complexos."
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+ShowShareButtons = false
+
+# Home page info
 [params.homeInfoParams]
-  Title = "derossimolina"
-  Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
+Title = "derossimolina"
+Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
+
+# Social icons
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/derossimolina"
 
 [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/derossimolina"
+name = "linkedin"
+url = "https://linkedin.com/in/derossimolina"
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
-
-[markup.goldmark.renderer]
-  unsafe = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+# Enable CSS customization
+[params.customCSS]
+enabled = true
