@@ -1,58 +1,38 @@
 baseURL = "https://derossimolina.github.io/"
 languageCode = "pt-BR"
 title = "derossimolina"
-theme = "PaperMod"
+theme = "nous"
 paginate = 10
 
 [params]
-  author = "Molina"
   description = "Notas, ensaios e pesquisa"
-  defaultTheme = "dark"
-  disableThemeToggle = true
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = false
-  ShowCodeCopyButtons = true
-  ShowToc = true
-  mainSections = ["posts"]
-
-[params.homeInfoParams]
-  Title = "derossimolina"
-  Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/derossimolina"
+  homeTitle   = "derossimolina"
+  homeContent = "Notas e ensaios sobre ciência, política e sistemas complexos."
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    url = "/posts/"
+    name   = "posts"
+    url    = "/posts/"
     weight = 10
   [[menu.main]]
-    identifier = "pesquisas"
-    name = "pesquisas"
-    url = "/pesquisas/"
+    name   = "pesquisas"
+    url    = "/pesquisas/"
     weight = 20
   [[menu.main]]
-    identifier = "publicacoes"
-    name = "publicações"
-    url = "/publicacoes/"
+    name   = "publicações"
+    url    = "/publicacoes/"
     weight = 30
   [[menu.main]]
-    identifier = "atividades"
-    name = "atividades"
-    url = "/atividades/"
+    name   = "atividades"
+    url    = "/atividades/"
     weight = 40
   [[menu.main]]
-    identifier = "sobre"
-    name = "sobre"
-    url = "/sobre/"
+    name   = "sobre"
+    url    = "/sobre/"
     weight = 50
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
