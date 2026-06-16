@@ -1,0 +1,46 @@
+# PaperMod Customized Parameters
+# Nous Research Aesthetic
+
+# Author
+author = "Molina"
+description = "Notas e ensaios sobre ciência, política e sistemas complexos."
+
+# Display Settings
+ShowReadingTime = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+ShowShareButtons = false
+ShowWordCount = false
+
+# Theme Customization
+defaultTheme = "auto"
+disableThemeToggle = false
+
+# Typography & Spacing (Nous Research Aesthetic)
+# Font customization is handled in custom.css
+# These are PaperMod specific settings
+
+# Home Page
+[homeInfoParams]
+Title = "derossimolina"
+Content = "Notas e ensaios sobre ciência, política e sistemas complexos."
+
+# Social Icons
+[[socialIcons]]
+name = "github"
+url = "https://github.com/derossimolina"
+
+[[socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/derossimolina"
+# Uncomment and add more as needed
+
+# Comments (if desired)
+# [comments]
+# provider = ""
+
+# Search (optional)
+# [search]
+# provider = "lunr"
