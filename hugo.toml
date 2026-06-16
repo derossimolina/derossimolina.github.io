@@ -6,8 +6,8 @@ paginate = 10
 
 [params]
   description  = "Notas, ensaios e pesquisa"
-  shortTitle   = "derossimolina"
-  homeTitle    = "derossimolina"
+  shortTitle   = "J. de Rossi Molina"
+  homeTitle    = "J. de Rossi Molina | PhD candidate in Administration"
   homeContent  = "Notas e ensaios sobre ciência, política e sistemas complexos."
 
 [menu]
