@@ -1,13 +1,14 @@
 baseURL = "https://derossimolina.github.io/"
 languageCode = "pt-BR"
-title = "derossimolina"
+title = "J. de Rossi Molina, PhD candidate in Administration | Researching about Complexity and AI for Public Management"
 theme = "nous"
 paginate = 10
 
 [params]
-  description = "Notas, ensaios e pesquisa"
-  homeTitle   = "derossimolina"
-  homeContent = "Notas e ensaios sobre ciência, política e sistemas complexos."
+  description  = "Notas, ensaios e pesquisa"
+  shortTitle   = "derossimolina"
+  homeTitle    = "derossimolina"
+  homeContent  = "Notas e ensaios sobre ciência, política e sistemas complexos."
 
 [menu]
   [[menu.main]]
