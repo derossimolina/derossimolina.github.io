@@ -1,14 +1,14 @@
 baseURL = "https://derossimolina.github.io/"
-languageCode = "pt-BR"
-title = "J. de Rossi Molina, PhD candidate in Administration | Researching about Complexity and AI for Public Management"
+languageCode = "en-US"
+title = "J. de Rossi Molina"
 theme = "nous"
 paginate = 10
 
 [params]
-  description  = "Notas, ensaios e pesquisa"
+  description  = "Notes, essays and reflexions"
   shortTitle   = "J. de Rossi Molina"
-  homeTitle    = "J. de Rossi Molina | PhD candidate in Administration"
-  homeContent  = "Notas e ensaios sobre ciência, política e sistemas complexos."
+  homeTitle    = "J. de Rossi Molina"
+  homeContent  = "Notes, essays, reflexions about Public Management, International Politics and Security"
 
 [menu]
   [[menu.main]]
@@ -16,20 +16,16 @@ paginate = 10
     url    = "/posts/"
     weight = 10
   [[menu.main]]
-    name   = "pesquisas"
-    url    = "/pesquisas/"
+    name   = "researches"
+    url    = "/researches/"
     weight = 20
   [[menu.main]]
-    name   = "publicações"
-    url    = "/publicacoes/"
+    name   = "papers"
+    url    = "/papers/"
     weight = 30
   [[menu.main]]
-    name   = "atividades"
-    url    = "/atividades/"
-    weight = 40
-  [[menu.main]]
-    name   = "sobre"
-    url    = "/sobre/"
+    name   = "about"
+    url    = "/about/"
     weight = 50
 
 [markup.goldmark.renderer]
