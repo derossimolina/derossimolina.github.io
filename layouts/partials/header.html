@@ -1,0 +1,58 @@
+<header class="site-header">
+  <div class="site-wrap">
+    <a class="site-title" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.shortTitle | default .Site.Title }}</a>
+    <nav>
+      <ul class="site-nav">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relLangURL }}"{{ if eq $.RelPermalink (.URL | relLangURL) }} class="active"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+        
+        <li class="lang-switcher" style="display:inline-flex; align-items:center; margin-left: 0.5rem; padding-left: 0.5rem; border-left: 1px solid currentColor; gap: 0.5rem;">
+          {{ $page := . }}
+          {{ $currentLang := .Language.Lang }}
+          {{ $langs := slice }}
+          {{ range hugo.Sites }}
+            {{ $langs = $langs | append .Language }}
+          {{ end }}
+          {{ range $langs | uniq }}
+            {{ $iterLang := .Lang }}
+            {{ $targetUrl := "/" }}
+            {{ if eq $iterLang "en" }}{{ $targetUrl = "/en/" }}{{ end }}
+            
+            {{ range $page.AllTranslations }}
+              {{ if eq .Language.Lang $iterLang }}
+                {{ $targetUrl = .RelPermalink }}
+              {{ end }}
+            {{ end }}
+            
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <a href="{{ $targetUrl }}" title="{{ .LanguageName }}" style="display:flex; color:currentColor; opacity: {{ if eq $iterLang $currentLang }}1{{ else }}0.4{{ end }}; transition: opacity 0.2s; margin-top: 6px;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='{{ if eq $iterLang $currentLang }}1{{ else }}0.4{{ end }}'">
+                {{ if eq $iterLang "pt" }}
+                  <svg width="22" height="15" viewBox="0 0 72 50" style="fill:none; stroke:currentColor; stroke-width:3;">
+                    <rect x="1" y="1" width="70" height="48" />
+                    <path d="M36,4 L68,25 L36,46 L4,25 Z" />
+                    <circle cx="36" cy="25" r="10" />
+                  </svg>
+                {{ else if eq $iterLang "en" }}
+                  <svg width="22" height="15" viewBox="0 0 72 50" style="fill:none; stroke:currentColor; stroke-width:3;">
+                    <rect x="1" y="1" width="70" height="48" />
+                    <rect x="1" y="1" width="30" height="24" style="fill:currentColor" />
+                    <path d="M31,8 h40 M31,16 h40 M31,24 h40 M1,33 h70 M1,42 h70" stroke-width="2"/>
+                  </svg>
+                {{ else }}
+                  {{ .LanguageName }}
+                {{ end }}
+              </a>
+              <div style="height: 4px; margin-top: 2px;">
+                {{ if eq $iterLang $currentLang }}
+                  <svg width="8" height="4" viewBox="0 0 8 4" style="fill:currentColor;"><polygon points="4,0 8,4 0,4"/></svg>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </li>
+        <li><button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button></li>
+      </ul>
+    </nav>
+  </div>
+</header>

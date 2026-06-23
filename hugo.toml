@@ -1,32 +1,60 @@
 baseURL = "https://derossimolina.github.io/"
-languageCode = "en-US"
+defaultContentLanguage = "pt"
 title = "J. de Rossi Molina"
 theme = "nous"
 paginate = 10
 
 [params]
-  description  = "Notes, essays and reflexions"
+  description  = "Notas, ensaios e reflexões"
   shortTitle   = "J. de Rossi Molina"
   homeTitle    = "J. de Rossi Molina"
-  homeContent  = "Notes, essays, reflexions about Public Management, International Politics and Security"
+  homeContent  = "Notas, ensaios e reflexões sobre Gestão Pública, Política Internacional e Segurança"
 
-[menu]
-  [[menu.main]]
-    name   = "posts"
-    url    = "/posts/"
-    weight = 10
-  [[menu.main]]
-    name   = "researches"
-    url    = "/researches/"
-    weight = 20
-  [[menu.main]]
-    name   = "papers"
-    url    = "/papers/"
-    weight = 30
-  [[menu.main]]
-    name   = "about"
-    url    = "/about/"
-    weight = 50
+[languages]
+  [languages.pt]
+    languageName = "Português"
+    languageCode = "pt-BR"
+    weight = 1
+    [[languages.pt.menu.main]]
+      name   = "postagens"
+      url    = "/posts/"
+      weight = 10
+    [[languages.pt.menu.main]]
+      name   = "pesquisas"
+      url    = "/researches/"
+      weight = 20
+    [[languages.pt.menu.main]]
+      name   = "artigos"
+      url    = "/papers/"
+      weight = 30
+    [[languages.pt.menu.main]]
+      name   = "sobre"
+      url    = "/about/"
+      weight = 50
+
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    weight = 2
+    [languages.en.params]
+      description  = "Notes, essays and reflexions"
+      homeContent  = "Notes, essays, reflexions about Public Management, International Politics and Security"
+    [[languages.en.menu.main]]
+      name   = "posts"
+      url    = "/posts/"
+      weight = 10
+    [[languages.en.menu.main]]
+      name   = "researches"
+      url    = "/researches/"
+      weight = 20
+    [[languages.en.menu.main]]
+      name   = "papers"
+      url    = "/papers/"
+      weight = 30
+    [[languages.en.menu.main]]
+      name   = "about"
+      url    = "/about/"
+      weight = 50
 
 [markup.goldmark.renderer]
   unsafe = true
