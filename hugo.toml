@@ -1,6 +1,6 @@
 baseURL = "https://derossimolina.github.io/"
 defaultContentLanguage = "pt"
-title = "J. de Rossi Molina"
+title = "de Rossi Molina"
 theme = "nous"
 paginate = 10
 
