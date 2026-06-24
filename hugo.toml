@@ -28,6 +28,10 @@ paginate = 10
       url    = "/papers/"
       weight = 30
     [[languages.pt.menu.main]]
+      name   = "Ensaios"
+      url    = "/essays/"
+      weight = 40
+    [[languages.pt.menu.main]]
       name   = "sobre"
       url    = "/about/"
       weight = 50
@@ -51,6 +55,10 @@ paginate = 10
       name   = "papers"
       url    = "/papers/"
       weight = 30
+    [[languages.en.menu.main]]
+      name   = "Essays"
+      url    = "/essays/"
+      weight = 40
     [[languages.en.menu.main]]
       name   = "about"
       url    = "/about/"
