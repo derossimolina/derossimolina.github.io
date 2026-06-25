@@ -30,7 +30,7 @@ To study this, I use **Generative Agent-Based Modeling (GABM)** — a computatio
 
 Throughout my journey, I have accumulated more questions than answers — and I have learned to be suspicious of those who claim the opposite. This space exists to think out loud: about research, about politics, about the paradoxes of academic life, and about what happens when theory meets the real world.
 
-Here you will find [Essays]({{< relref "./content/essays/" >}}) — freer reflections on topics that trouble me — and [Publications]({{< relref "./content/papers.md/" >}}) — the texts that survived peer scrutiny. The difference between the two is one of form, not of seriousness.
+Here you will find [Essays](/en/essays/) — freer reflections on topics that trouble me — and [Publications](/en/papers/) — the texts that survived peer scrutiny. The difference between the two is one of form, not of seriousness.
 
 # Education
 

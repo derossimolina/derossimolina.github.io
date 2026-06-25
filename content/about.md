@@ -31,7 +31,7 @@ Para estudar isso, utilizo **Modelagem Baseada em Agentes Gerativos (GABM)** —
 
 Ao longo da minha trajetória, acumulei mais perguntas do que respostas — e aprendi a desconfiar de quem tem o contrário. Este espaço existe para pensar em voz alta: sobre pesquisa, sobre política, sobre os paradoxos da vida acadêmica e sobre o que acontece quando a teoria encontra o mundo real.
 
-Você vai encontrar aqui [Ensaios]({{< relref "./content/essays/" >}}) — reflexões mais livres sobre temas que me inquietam — e [Publicações]({{< relref "./content/papers.md/" >}}) — os textos que sobreviveram ao escrutínio dos pares. A diferença entre os dois é de forma, não de seriedade.
+Você vai encontrar aqui [Ensaios](/essays/) — reflexões mais livres sobre temas que me inquietam — e [Publicações](/papers/) — os textos que sobreviveram ao escrutínio dos pares. A diferença entre os dois é de forma, não de seriedade.
 
 # Formação
 
