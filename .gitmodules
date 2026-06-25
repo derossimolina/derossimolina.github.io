@@ -1,0 +1,3 @@
+[submodule "themes/nous"]
+	path = themes/nous
+	url = https://github.com/derossimolina/nous-theme.git
