@@ -1,6 +1,6 @@
 ---
 title: "Por que simular o crime?"
-date: 2026-07-01
+date: 2026-06-25
 cover:
     image: "/images/posts/simular-importa/cover.jpg"
     alt: "Notas de Reais sobre um lugar branco com sombras sobre elas"
