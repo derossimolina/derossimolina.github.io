@@ -21,7 +21,7 @@ Mas a resposta longa — a que importa — diz algo mais perturbador sobre a nat
 
 Toda vez que um grande esquema de lavagem de dinheiro é desmantelado, a narrativa pública segue um roteiro previsível. Operação policial, prisões, confisco de ativos, coletiva de imprensa. A sensação é de vitória — e às vezes é mesmo.
 
-Mas há algo que raramente aparece nessa narrativa: ==**o esquema já funcionou**==. Por anos, às vezes por décadas. O dinheiro já circulou, já se multiplicou, já financiou outras operações. O que foi desmantelado é um cadáver bem-vestido.
+Mas há algo que raramente aparece nessa narrativa: ==o esquema já funcionou==. Por anos, às vezes por décadas. O dinheiro já circulou, já se multiplicou, já financiou outras operações. O que foi desmantelado é um cadáver bem-vestido.
 
 Isso não é falha dos investigadores. É uma característica estrutural do problema.
 
@@ -53,7 +53,7 @@ Não é ficção científica. É o mesmo princípio que os economistas usam para
 Na prática, isso significa construir agentes computacionais que representam os diferentes participantes de um esquema — o operador financeiro, o laranja recrutado, a empresa de fachada, o profissional que fecha os olhos, o regulador que não tem recursos suficientes. Cada agente tem suas próprias regras de decisão, seu próprio nível de informação, seu próprio limiar de risco. E então o sistema roda.
 
 ![Esquema GABM aplicado a AML](
-/images/posts/por-que-simular-o-crime/esquema_gabm_aml.svg)
+/images/posts/simular-importa/esquema_gabm_aml.svg)
 
 O que emerge não é prescrito. É descoberto.
 
