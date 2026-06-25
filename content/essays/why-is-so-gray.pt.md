@@ -1,5 +1,5 @@
 ---
-title: "Why is so gray"
+title: "Por que tudo é tão cinza"
 date: 2026-06-02
 draft: false
 tags: ["prosa"]

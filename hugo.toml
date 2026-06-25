@@ -67,5 +67,8 @@ paginate = 10
 [markup.goldmark.renderer]
   unsafe = true
 
+[markup.goldmark.extensions.extras.mark]
+  enable = true
+
 [outputs]
   home = ["HTML", "RSS"]
