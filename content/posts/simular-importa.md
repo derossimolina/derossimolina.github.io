@@ -2,7 +2,7 @@
 title: "Por que simular o crime?"
 date: 2026-07-01
 cover:
-    image: "/images/posts/simular-importa/cover.jpg
+    image: "/images/posts/simular-importa/cover.jpg"
     alt: "Notas de Reais sobre um lugar branco com sombras sobre elas"
 draft: false
 tags: ["GABM", "AML", "sistemas complexos", "lavagem de dinheiro", "pesquisa"]
